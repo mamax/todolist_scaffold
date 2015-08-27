@@ -29,6 +29,9 @@ gem 'jbuilder', '~> 2.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#add device gem - Flexible authentication solution for Rails
+gem 'devise', '3.5.2'
+
 group :development, :test do
   # Use postgresql as the database for Active Record
   gem 'pg'
@@ -39,6 +42,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   gem 'rspec-rails', '3.3.3'
+
 end
 
 group :doc do
