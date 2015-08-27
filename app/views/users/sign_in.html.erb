@@ -1,0 +1,19 @@
+<% provide(:title, 'Sign in') %>
+<h1>Sign in</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+
+        <%= render 'users/error_messages'  %>
+
+        <%= f.label :email %>
+        <%= f.text_field :email, placeholder: "Enter your email..." %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password, placeholder: "Enter your pass..." %>
+
+        <%= f.submit "Sign_in", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
