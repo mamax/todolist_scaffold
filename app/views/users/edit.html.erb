@@ -1,6 +1,14 @@
+<% provide(:title, 'Editing User') %>
 <h1>Editing User</h1>
+<h4><%= @user.email %></h4>
 
-<%= render 'form' %>
+<div class="center hero-unit">
+  <div class="row">
+    <section>
+      <%= render 'form' %>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+      <%= link_to 'Show', @user %> |
+      <%= link_to 'Back', users_path %>
+    </section>
+  </div>
+</div>
