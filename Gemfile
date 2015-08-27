@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
-# Use postgresql as the database for Active Record
-gem 'pg'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,15 +30,24 @@ gem 'jbuilder', '~> 2.0'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Use postgresql as the database for Active Record
+  gem 'pg'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+
+  gem 'rspec-rails', '2.13.1'
 end
 
 group :doc do
   gem 'sdoc', '~> 0.4.0', require: false
+end
+
+group :test do
+  gem 'selenium-webdriver'
+  gem 'capybara'
 end
 
 group :production do
