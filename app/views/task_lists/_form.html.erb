@@ -1,0 +1,10 @@
+<%= form_for(@task_list) do |f| %>
+    <%= render 'task_lists/error_messages_task_lists'  %>
+
+    <%= f.text_area :name, placeholder: "Enter todolist name..." %>
+
+    <div class="actions">
+      <%= link_to 'Close', root_path, class: "btn btn-default" %>
+      <%= f.submit "Save", class: "btn btn-primary" %>
+    </div>
+<% end %>

@@ -1,0 +1,12 @@
+<% provide(:title, 'Edit Task List') %>
+
+<div class="center hero-unit">
+  <div class="row">
+    <h1>Edit Task List</h1>
+    <section>
+      <%= render 'form' %>
+      <%= link_to 'Show', @task_list %> |
+      <%= link_to 'Back', task_lists_path %>
+    </section>
+  </div>
+</div>
