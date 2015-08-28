@@ -5,7 +5,9 @@ class TaskListsController < ApplicationController
   # GET /task_lists
   # GET /task_lists.json
   def index
-    @task_lists = TaskList.all
+    # @task_lists = TaskList.all
+    @user = current_user
+    @task_lists = @user.task_lists
   end
 
   # GET /task_lists/1
