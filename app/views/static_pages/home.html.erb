@@ -3,7 +3,7 @@
 <% if signed_in? %>
     <div class="center">
       <%= @user.email %>  <%= link_to " Edit", edit_user_registration_path(@user), title: "edit profile" %>
-      <div class="line">OR</div>
+      <div class="line"></div>
       <%= link_to "Sign out", destroy_user_session_path, method: "delete" %>
     </div>
 
@@ -14,7 +14,7 @@
 <% else %>
     <div class="center">
       <%= link_to "Sign in", new_user_session_path %>
-      <div class="line">OR</div>
+      <div class="line"></div>
       <%= link_to "Sign up", new_user_registration_path %>
     </div>
 
